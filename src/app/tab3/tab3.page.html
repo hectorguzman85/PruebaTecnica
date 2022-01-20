@@ -9,15 +9,10 @@
 <ion-content [fullscreen]="true" color="secondary">
   <div class="ion-item">
     <div class="ion-avatar">
-      <ion-avatar class="avatar">
-        <img  *ngIf ="FotoPerfil" src="{{ FotoPerfil }}">
+      <ion-avatar class="avatar" text-center>
+        <img *ngIf ="FotoCam" src="{{ FotoCam }}">
       </ion-avatar>
      <div>
-        <!--<button (click)="takePicture()">
-          <div class="ion-icon">
-            <ion-icon name="camera"></ion-icon>
-          </div>              
-        </button>-->
         <ion-button (click)="takePicture()" color="primary">Tomar Foto</ion-button>
       </div>
     </div>  

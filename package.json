@@ -23,6 +23,7 @@
     "@awesome-cordova-plugins/http": "^5.37.3",
     "@ionic/angular": "^6.0.0",
     "@ionic/storage": "^3.0.6",
+    "cordova-browser": "6.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
@@ -82,7 +83,8 @@
       "cordova-plugin-ionic-keyboard": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "browser"
     ]
   }
 }

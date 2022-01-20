@@ -17,6 +17,10 @@ export class Tab3Page {
     private  storage:  Storage
   ) {}
 
+  async ngOnInit() {
+    await this.storage.create();
+  }
+
   async takePicture() {
 
     const options: CameraOptions = {
