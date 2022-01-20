@@ -1,17 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Usuarios
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="secondary">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-grid class="ion-margin">
+    <ion-row>
+      <ion-col>name</ion-col>
+      <ion-col>email</ion-col>
+      <ion-col>city</ion-col>
+      <ion-col>phone</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let usuario of arrayPosts">
+      <ion-col>{{ usuario.name }}</ion-col>
+      <ion-col>{{ usuario.email }}</ion-col> 
+      <ion-col> {{ usuario.city }}</ion-col> 
+      <ion-col>{{ usuario.phone }}</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
 </ion-content>

@@ -1,17 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Perfil
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content [fullscreen]="true" color="secondary">
+  <div class="ion-item">
+    <div class="ion-avatar">
+      <ion-avatar class="avatar">
+        <img  *ngIf ="FotoPerfil" src="{{ FotoPerfil }}">
+      </ion-avatar>
+     <div>
+        <!--<button (click)="takePicture()">
+          <div class="ion-icon">
+            <ion-icon name="camera"></ion-icon>
+          </div>              
+        </button>-->
+        <ion-button (click)="takePicture()" color="primary">Tomar Foto</ion-button>
+      </div>
+    </div>  
+  </div>
 </ion-content>

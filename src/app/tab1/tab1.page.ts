@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  fechaHoy = "";
+
   constructor() {}
+
+
+  ngOnInit() {
+    var todayLocal = new Date(); //  for now
+    var FechaLocal = ('0' + todayLocal.getDate()).slice(-2) + '-' + ('0' + (todayLocal.getMonth() + 1)).slice(-2) + '-' + todayLocal.getFullYear();
+    this.fechaHoy = FechaLocal;
+  }
+
+  
 
 }
